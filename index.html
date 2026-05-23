@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Подготовка к виртуальному ужину" />
+  <title>dinner.exe — Sonja</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/theme.css?v=11" />
+  <link rel="stylesheet" href="assets/utilities.css?v=11" />
+  <link rel="stylesheet" href="assets/minigames.css?v=29" />
+</head>
+<body data-current-step="1">
+
+  <div class="sparkles-bg desktop-only" aria-hidden="true">
+    <img class="sparkle-img" src="assets/emojis/pink/815535-pinksparkheart.gif" alt="" />
+    <img class="sparkle-img" src="assets/emojis/pink/909409-pinkheartshine.png" alt="" />
+    <img class="sparkle-img" src="assets/emojis/pink/608405-boldpinkheartwings.gif" alt="" />
+    <img class="sparkle-img" src="assets/emojis/pink/674881-pinkletterwings.png" alt="" />
+    <img class="sparkle-img" src="assets/emojis/pink/469746-spinningpinkheart.gif" alt="" />
+    <img class="sparkle-img" src="assets/emojis/pink/865253-leftpinkwingflutter.gif" alt="" />
+    <img class="sparkle-img" src="assets/emojis/pink/626147-rightpinkwingflutter.gif" alt="" />
+    <img class="sparkle-img" src="assets/emojis/pink/199113-leftpinkangelwingsparkle.gif" alt="" />
+  </div>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-inner">
+      ✨ воскресенье 21:00 москва ✨ jitsi meet ✨ виртуальный ужин ✨ воскресенье 21:00 москва ✨ jitsi meet ✨ виртуальный ужин ✨
+    </div>
+  </div>
+
+  <div id="site-chrome" class="desktop site-layer">
+
+    <header class="mb-3 text-center relative">
+      <img class="header-deco-img desktop-only" src="assets/emojis/pink/238230-bunny.png" alt="" style="top:0;left:6%" />
+      <img class="header-deco-img desktop-only" src="assets/emojis/pink/674881-pinkletterwings.png" alt="" style="top:2px;right:8%" />
+      <p class="logo-3d mb-1">dinner<span class="logo-accent">.exe</span></p>
+      <p class="tagline mb-2">made 4 sonja · virtual date night</p>
+      <nav class="nav-icons decor desktop-only" aria-hidden="true">
+        <span class="nav-icon"><span>🏠</span><span>home</span></span>
+        <span class="nav-icon"><span>⭐</span><span>vibe</span></span>
+        <span class="nav-icon"><span>💗</span><span>menu</span></span>
+        <span class="nav-icon"><span>📁</span><span>order</span></span>
+        <span class="nav-icon"><span>✉️</span><span>send</span></span>
+      </nav>
+      <p class="decor-label desktop-only">декор — не кликай</p>
+    </header>
+
+    <div class="layout">
+
+      <aside id="step-sidebar" class="desktop-only flex flex-col gap-3 min-w-0">
+        <div class="win">
+          <div class="win-title">
+            <span class="win-title-text">этапы</span>
+            <div class="win-controls">
+              <span class="win-ctrl">_</span><span class="win-ctrl">□</span><span class="win-ctrl">×</span>
+            </div>
+          </div>
+          <div class="win-body inset p-2">
+            <p class="quick-links-label">можно вернуться назад</p>
+            <nav id="step-nav"></nav>
+          </div>
+        </div>
+        <div class="win">
+          <div class="win-title inactive">
+            <span class="win-title-text">welcome.txt</span>
+            <div class="win-controls"><span class="win-ctrl">×</span></div>
+          </div>
+          <div class="win-body inset text-center py-4">
+            <img src="assets/emojis/pink/238230-bunny.png" alt="" class="mx-auto w-14 h-14 object-contain" aria-hidden="true" />
+            <p class="text-meta text-muted-2 mt-2">bunny says:<br>don't be late! ✨</p>
+          </div>
+        </div>
+      </aside>
+
+      <div class="min-w-0 flex flex-col gap-3">
+        <div id="main-win" class="win relative win-main-glow">
+          <img class="win-deco-img s1 desktop-only" src="assets/emojis/pink/238230-bunny.png" alt="" aria-hidden="true" />
+          <img class="win-deco-img s2 desktop-only" src="assets/emojis/pink/815535-pinksparkheart.gif" alt="" aria-hidden="true" />
+          <img class="win-deco-img s3 desktop-only" src="assets/emojis/pink/909409-pinkheartshine.png" alt="" aria-hidden="true" />
+          <div class="win-title">
+            <span class="win-title-text main-window-title-tech" id="main-window-title">welcome.html</span>
+            <span class="mobile-only win-title-text font-bold" id="main-window-title-human">Шаг 1 — Привет</span>
+            <div class="win-controls desktop-only">
+              <span class="win-ctrl">_</span><span class="win-ctrl">□</span><span class="win-ctrl">×</span>
+            </div>
+          </div>
+          <div class="win-body" id="main-content">
+
+            <div id="step-strip" class="mobile-only step-strip" aria-live="polite"></div>
+
+            <section data-step="1" class="step-enter">
+              <p class="mobile-only step-cta-hint mb-2">↓ нажми розовую кнопку внизу</p>
+              <p class="text-meta mb-2">Воскресенье · 21:00 · Москва</p>
+              <h2 class="headline-3d mb-2">Привет, Соня ✨</h2>
+              <p class="font-bold mb-4">Готовим наш ужин в воскресенье</p>
+              <p class="text-meta mb-1">до ужина осталось:</p>
+              <div id="countdown" class="mb-3" aria-live="polite"></div>
+              <div class="mb-4">
+                <div class="dinner-meter" aria-hidden="true">
+                  <div id="dinner-meter-fill" class="dinner-meter-fill" style="width:0%"></div>
+                </div>
+              </div>
+              <button id="btn-start" type="button" class="win-btn primary cta-big">
+                Начать подготовку →
+              </button>
+            </section>
+
+            <section data-step="2" class="hidden step-enter">
+              <p class="mobile-only step-cta-hint mb-2">↓ выбери вайб, потом «Далее» внизу экрана</p>
+              <h2 class="headline-3d mb-3">Как пройдёт вечер</h2>
+              <div class="win-inset mb-4 font-bold text-sm space-y-2">
+                <p>📹 Созваниваемся в <strong>Jitsi Meet</strong></p>
+                <p>🔗 Ссылку пришлю ближе к времени</p>
+                <p>🍽 Ужинаем вместе онлайн</p>
+              </div>
+              <p class="section-label mb-2">Выбери вайб</p>
+              <div id="vibe-cards" class="mb-3"></div>
+              <div id="vibe-outfit" class="hidden mb-3"></div>
+              <p id="vibe-hint" class="hidden hint-box">Выбери вариант, потом нажми «Далее» внизу</p>
+            </section>
+
+            <section data-step="3" class="hidden step-enter menu-step">
+              <p class="mobile-only step-cta-hint mb-2">↓ добавь блюда, потом «Далее»</p>
+              <h2 class="headline-3d mb-1">Меню</h2>
+              <p class="section-label text-muted-2 mb-4">Нажми «+ заказ» у блюд</p>
+              <div id="menu-root" class="menu-root-scroll"></div>
+            </section>
+
+            <section data-step="4" class="hidden step-enter">
+              <p class="mobile-only step-cta-hint mb-2">↓ отметь задания, потом «Далее»</p>
+              <h2 class="headline-3d mb-2">Задания перед ужином</h2>
+              <p class="section-label text-muted-2 mb-4">Что сделать до воскресенья</p>
+              <div id="tasks-root"></div>
+              <p id="tasks-hint" class="hidden hint-box mt-3">Отметь все задания, потом «Далее»</p>
+            </section>
+
+            <section data-step="5" class="hidden step-enter">
+              <p class="mobile-only step-cta-hint mb-2">↓ проверь и отправь</p>
+              <h2 class="headline-3d mb-4">Итого</h2>
+              <div id="summary-tasks" class="win-inset mb-4"></div>
+              <div class="grid sm:grid-cols-2 gap-3 mb-4">
+                <div class="win-inset">
+                  <p class="summary-label mb-1">Вайб</p>
+                  <p id="summary-vibe" class="font-bold text-pink text-lg">—</p>
+                </div>
+                <div class="win-inset">
+                  <p class="summary-label mb-2">Заказ</p>
+                  <div id="summary-order" class="font-bold text-sm"></div>
+                </div>
+              </div>
+              <button id="btn-submit" type="button" disabled class="win-btn primary cta-big">
+                Отправить Никите →
+              </button>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <aside class="desktop-only hidden lg:flex flex-col gap-3 min-w-0">
+        <div class="win">
+          <div class="win-title inactive">
+            <span class="win-title-text">now_playing.mp3</span>
+            <div class="win-controls"><span class="win-ctrl">×</span></div>
+          </div>
+          <div class="win-body inset text-sm">
+            <p class="font-bold mb-1">sunday_night.mp3</p>
+            <p class="text-meta mb-2">00:00 — date night</p>
+            <div class="waveform" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="dinner-meter mb-2">
+              <div id="widget-meter-fill" class="dinner-meter-fill" style="width:35%"></div>
+            </div>
+            <p class="text-center font-bold text-caption">▶ ❚❚ ⏭</p>
+          </div>
+        </div>
+        <div class="postit">
+          <p class="text-[#ff66b2] mb-1">don't forget! ✨</p>
+          <ul class="list-none p-0 m-0 space-y-1 text-[#333]">
+            <li>☐ свечи</li>
+            <li>☐ стол</li>
+            <li>☐ настроение</li>
+          </ul>
+        </div>
+        <img src="assets/emojis/71724-cinnamoroll-bubbletea.png" alt="" class="mx-auto w-16 h-16 object-contain block" aria-hidden="true" />
+      </aside>
+    </div>
+  </div>
+
+  <footer id="nav-footer" class="taskbar hidden">
+    <button type="button" class="win-btn taskbar-start desktop-only" disabled>start</button>
+    <div class="taskbar-tabs desktop-only" id="taskbar-tabs">
+      <span class="taskbar-tab active" data-tab="main">welcome.html</span>
+    </div>
+    <span id="taskbar-step-label" class="mobile-only flex-1 min-w-0 truncate px-1"></span>
+    <button id="btn-back" type="button" class="win-btn hidden shrink-0">← Назад</button>
+    <button id="btn-next" type="button" class="win-btn primary hidden shrink-0">Далее →</button>
+    <time id="taskbar-clock" class="taskbar-clock desktop-only">00:00</time>
+  </footer>
+
+  <div id="cart-bar" class="cart-bar hidden">
+    <div class="cart-dock">
+      <div id="cart-panel" class="cart-panel hidden">
+        <div class="cart-panel-title">
+          <span>cart.exe — корзина</span>
+          <button type="button" id="cart-close" class="win-ctrl cart-close-btn" aria-label="Закрыть">×</button>
+        </div>
+        <div id="cart-sheet" class="cart-sheet"></div>
+      </div>
+      <button id="cart-toggle" type="button" class="cart-toggle-btn">
+        <span>🛒 Корзина</span>
+        <span class="cart-count-badge"><span id="cart-count">0</span></span>
+      </button>
+    </div>
+  </div>
+
+  <div id="minigame-modal" class="minigame-modal hidden" role="dialog" aria-modal="true" aria-labelledby="minigame-title">
+    <div class="minigame-win win">
+      <div class="win-title">
+        <span class="win-title-text" id="minigame-title">game.exe</span>
+        <div class="win-controls desktop-only"><span class="win-ctrl">×</span></div>
+      </div>
+      <div class="win-body inset minigame-body" id="minigame-body"></div>
+    </div>
+  </div>
+
+  <div id="finale-screen" class="finale-screen hidden" aria-hidden="true">
+    <div class="finale-float" aria-hidden="true"></div>
+    <div class="finale-win-wrap">
+      <div class="finale-win win">
+        <div class="win-title">
+          <span class="win-title-text">finale.exe</span>
+          <div class="win-controls desktop-only"><span class="win-ctrl">×</span></div>
+        </div>
+        <div class="win-body inset finale-body">
+          <img class="finale-bunny" src="assets/emojis/pink/238230-bunny.png" alt="" />
+          <p class="finale-logo">dinner<span style="color:var(--pink-deep)">.exe</span></p>
+          <h1 class="finale-title">Заказ у Никиты</h1>
+          <div class="finale-personal" id="finale-personal"></div>
+          <ul class="finale-summary" id="finale-summary"></ul>
+          <p class="finale-countdown" id="finale-countdown" aria-live="polite"></p>
+          <p class="finale-meta">Воскресенье · 21:00</p>
+          <p class="finale-foot">Можно закрыть вкладку — всё сохранено</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="delivery-modal" class="delivery-modal hidden" role="dialog" aria-modal="true" aria-labelledby="delivery-title">
+    <div class="delivery-win win">
+      <div class="win-title">
+        <span class="win-title-text" id="delivery-title">delivery.exe</span>
+      </div>
+      <div class="win-body delivery-body text-center">
+        <div class="delivery-scene" aria-hidden="true">
+          <div class="delivery-road">
+            <div class="delivery-road-surface"></div>
+            <div class="delivery-road-dash"></div>
+          </div>
+          <span class="delivery-emoji delivery-start" aria-hidden="true">🏠</span>
+          <span class="delivery-emoji delivery-dest" aria-hidden="true">🏢</span>
+          <span class="delivery-emoji delivery-truck">🚚</span>
+          <img class="delivery-emoji-img delivery-mail" src="assets/emojis/pink/674881-pinkletterwings.png" alt="" aria-hidden="true" />
+        </div>
+        <p class="delivery-status font-bold text-lg mt-4">Отправляем Никите…</p>
+        <p class="delivery-done hidden font-bold text-[#ff66b2] text-lg mt-4">Доставлено!</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/menu.js?v=11"></script>
+  <script src="assets/emoji-pack.js?v=11"></script>
+  <script src="assets/stickers.js?v=11"></script>
+  <script src="assets/minigames.js?v=28"></script>
+  <script src="assets/app.js?v=15"></script>
+</body>
+</html>
