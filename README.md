@@ -16,10 +16,9 @@
 
 ## GitHub Pages
 
-1. Создай репозиторий на GitHub.
-2. Залей содержимое этой папки.
-3. Settings → Pages → Source: **main** / **root** (или `/docs`, если положишь сайт в `docs/`).
-4. Сайт будет по адресу `https://<username>.github.io/<repo>/`.
+Сайт: **https://belikof.github.io/virtual-dinner-prep/**
+
+Репозиторий: https://github.com/Belikof/virtual-dinner-prep — ветка `main`, корень репо.
 
 ## Локально
 
